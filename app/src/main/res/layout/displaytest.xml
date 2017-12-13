@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<!--
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/next_long"
+            android:weightSum="1"
+            android:layout_gravity="center|bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp">
+
+            <TextView
+                android:id="@+id/txtOK"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:background="@drawable/btn_con"
+                android:shadowColor="@color/white"
+                android:textSize="@dimen/_25sdp"
+                android:text="OK"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+
+
+        </LinearLayout>
+    </FrameLayout>
+-->
+    <TextView
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/txtError"
+        android:textSize="@dimen/_20sdp"
+        android:textColor="@color/textColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+<!--
+        <ListView
+            android:id="@+id/listdata"
+            android:divider="@null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+        </ListView>
+-->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/my_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:scrollbars="vertical" />
+</FrameLayout>

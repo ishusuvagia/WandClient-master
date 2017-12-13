@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:background="@drawable/fill_light_gray"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <Button
+
+                    android:id="@+id/btnTube"
+                    android:textSize="@dimen/_15sdp"
+                    android:textAllCaps="false"
+                    android:textStyle="normal"
+                    android:text="Tube Room - Parts Pulling"
+                    android:textColor="@color/textColor"
+                    android:background="@drawable/ripple"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:background="@drawable/fill_light_gray"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:textSize="@dimen/_15sdp"
+                    android:textAllCaps="false"
+                    android:textStyle="normal"
+                    android:text="Kit Lead"
+                    android:textColor="@color/textColor"
+
+                    android:background="@drawable/ripple"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/fill_light_gray"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:textSize="@dimen/_15sdp"
+                    android:textAllCaps="false"
+                    android:textStyle="normal"
+                    android:text="QC - Quality Control"
+                    android:textColor="@color/textColor"
+
+                    android:background="@drawable/ripple"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:background="@drawable/fill_light_gray"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:textSize="@dimen/_15sdp"
+                    android:textAllCaps="false"
+                    android:textStyle="normal"
+                    android:text="Receive Inventory"
+                    android:textColor="@color/textColor"
+
+                    android:background="@drawable/ripple"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:background="@drawable/fill_light_gray"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:textSize="@dimen/_15sdp"
+                    android:textAllCaps="false"
+                    android:textStyle="normal"
+                    android:text="Inventory Verification"
+                    android:textColor="@color/textColor"
+                    android:background="@drawable/ripple"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

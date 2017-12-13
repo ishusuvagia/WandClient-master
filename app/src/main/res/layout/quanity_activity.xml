@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_marginBottom="@dimen/_40sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_50sdp"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_weight="1.6"
+                    android:gravity="center"
+                    android:textSize="@dimen/_15sdp"
+                    android:text="Protocol Name"
+                    android:textColor="@color/dark_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:id="@+id/editProtocol"
+                    android:paddingLeft="@dimen/_5sdp"
+
+                    android:textColor="@color/dark_gray"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/_15sdp"
+                    android:background="@drawable/lines"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/_50sdp"
+
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_weight="1.6"
+                    android:gravity="center"
+                    android:textSize="@dimen/_15sdp"
+                    android:text="Visit Name"
+                    android:textColor="@color/dark_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:id="@+id/editVisit"
+                    android:paddingLeft="@dimen/_5sdp"
+
+                    android:textColor="@color/dark_gray"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/_15sdp"
+                    android:background="@drawable/lines"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/_50sdp"
+
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_weight="1.6"
+                    android:gravity="center"
+                    android:textSize="@dimen/_15sdp"
+                    android:text="Quantity"
+                    android:textColor="@color/dark_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:id="@+id/editQuantity"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:textColor="@color/dark_gray"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/_15sdp"
+                    android:background="@drawable/lines"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <!--<LinearLayout
+            android:background="@drawable/design_button"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_50sdp"
+
+            android:layout_height="@dimen/_50sdp">
+            <TextView
+                android:background="@drawable/ripple"
+
+                android:id="@+id/txtOK"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="@dimen/_20sdp"
+                android:text="OK"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>-->
+
+        </LinearLayout>
+
+
+</ScrollView>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/next_long"
+            android:weightSum="1"
+            android:layout_gravity="center|bottom"
+            android:background="@drawable/btn_con"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/txtOK"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:shadowColor="@color/white"
+                android:textSize="@dimen/_25sdp"
+                android:text="OK"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+
+
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>
