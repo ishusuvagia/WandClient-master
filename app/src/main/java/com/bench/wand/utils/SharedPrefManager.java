@@ -1,10 +1,9 @@
-package com.bench.wand.Utils;
+package com.bench.wand.utils;
 
 import android.content.Context;
-import android.content.Intent;
 import android.content.SharedPreferences;
 
-import com.bench.wand.POJO.User;
+import com.bench.wand.pojo.User;
 
 public class SharedPrefManager {
  

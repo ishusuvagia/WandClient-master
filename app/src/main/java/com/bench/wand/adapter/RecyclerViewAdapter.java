@@ -1,7 +1,6 @@
-package com.bench.wand.Adapter;
+package com.bench.wand.adapter;
 
 import android.content.Context;
-import android.database.Observable;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,7 +9,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.TextView;
 
-import com.bench.wand.POJO.Event_Model;
+import com.bench.wand.pojo.Event_Model;
 import com.bench.wand.R;
 
 import java.util.ArrayList;

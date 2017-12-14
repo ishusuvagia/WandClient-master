@@ -1,4 +1,4 @@
-package com.bench.wand.POJO;
+package com.bench.wand.pojo;
 
 public class User {
  

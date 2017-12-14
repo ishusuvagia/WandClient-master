@@ -25,7 +25,7 @@
 
         <!--my code-->
 
-        <activity android:name=".Activity.LoginActivityOne">
+        <activity android:name=".activity.LoginActivityOne">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -33,42 +33,42 @@
         </activity>
 
 
-        <activity android:name=".Activity.CheckPinActivity"
+        <activity android:name=".activity.CheckPinActivity"
             android:windowSoftInputMode="stateHidden"
 
             android:screenOrientation="portrait">
 
         </activity>
-        <activity android:name=".Activity.FullSingleKitActivity"
+        <activity android:name=".activity.FullSingleKitActivity"
             android:windowSoftInputMode="stateHidden"
 
             android:screenOrientation="portrait">
 
         </activity>
-        <activity android:name=".Activity.RoleMenu"
+        <activity android:name=".activity.RoleMenu"
             android:windowSoftInputMode="stateHidden"
             android:screenOrientation="portrait">
 
         </activity>
 
-        <activity android:name=".Activity.PartsPullActivity"
+        <activity android:name=".activity.PartsPullActivity"
             android:windowSoftInputMode="stateHidden"
             android:screenOrientation="portrait">
 
         </activity>
 
-        <activity android:name=".Activity.QuanityActivity"
+        <activity android:name=".activity.QuanityActivity"
             android:windowSoftInputMode="stateHidden"
             android:screenOrientation="portrait">
 
         </activity>
 
-        <activity android:name=".Activity.PartsPullActivity2"
+        <activity android:name=".activity.PartsPullActivity2"
             android:windowSoftInputMode="stateHidden"
             android:screenOrientation="portrait">
 
         </activity>
-        <activity android:name=".Activity.DisplayQualityTest"
+        <activity android:name=".activity.DisplayQualityTest"
             android:windowSoftInputMode="stateHidden"
             android:screenOrientation="portrait">
 

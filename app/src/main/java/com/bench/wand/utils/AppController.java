@@ -1,4 +1,4 @@
-package com.bench.wand.Utils;
+package com.bench.wand.utils;
 
 import android.app.Application;
 import android.text.TextUtils;

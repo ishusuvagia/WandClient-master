@@ -1,4 +1,4 @@
-package com.bench.wand.Activity;
+package com.bench.wand.activity;
 
 import android.app.DatePickerDialog;
 import android.content.Context;
@@ -15,15 +15,11 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bench.wand.R;
-import com.bench.wand.Utils.Constant;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
-
-import static com.bench.wand.Utils.Constant.EMPPIN;
-import static com.bench.wand.Utils.Constant.txtSize;
 
 /**
  * Created by Unni Vemanchery Mana on 12/1/2017.

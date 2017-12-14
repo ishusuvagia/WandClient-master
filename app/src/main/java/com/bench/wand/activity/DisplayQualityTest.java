@@ -1,4 +1,4 @@
-package com.bench.wand.Activity;
+package com.bench.wand.activity;
 
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -11,18 +11,13 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ListView;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.bench.wand.Adapter.Event_Adapter;
-import com.bench.wand.Adapter.MyAdapter;
-import com.bench.wand.Adapter.RecyclerViewAdapter;
-import com.bench.wand.POJO.Event_Model;
+import com.bench.wand.adapter.RecyclerViewAdapter;
+import com.bench.wand.pojo.Event_Model;
 import com.bench.wand.R;
-import com.bench.wand.Utils.Constant;
+import com.bench.wand.utils.Constant;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;

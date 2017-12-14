@@ -1,4 +1,4 @@
-package com.bench.wand.Activity;
+package com.bench.wand.activity;
 
 import android.annotation.TargetApi;
 import android.content.Context;
@@ -10,10 +10,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 
 import com.bench.wand.R;
-import com.bench.wand.Utils.Constant;
 
 /**
  * Created by Unni Mana on 11/24/2017.

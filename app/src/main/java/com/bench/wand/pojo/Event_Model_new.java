@@ -1,4 +1,4 @@
-package com.bench.wand.POJO;
+package com.bench.wand.pojo;
 
 /**
  * Created by isquare3 on 29/06/17.

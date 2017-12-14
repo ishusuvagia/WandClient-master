@@ -1,14 +1,13 @@
-package com.bench.wand.Adapter;
+package com.bench.wand.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.bench.wand.POJO.Event_Model;
+import com.bench.wand.pojo.Event_Model;
 import com.bench.wand.R;
 
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package com.bench.wand.Utils;
+package com.bench.wand.utils;
 
 public class Constant
 {
