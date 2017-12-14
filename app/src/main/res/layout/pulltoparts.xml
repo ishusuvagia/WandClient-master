@@ -8,9 +8,21 @@
     android:layout_width="match_parent"
     android:gravity="center"
     android:layout_height="match_parent">
+    <TextView
+        android:textSize="@dimen/_18sdp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:text="Parts to Pull "
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:background="@drawable/fill_light_gray_bar"
+        android:layout_height="@dimen/_50sdp" />
+
 
     <ScrollView
-        android:layout_marginBottom="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:layout_marginBottom="@dimen/_70sdp"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -20,22 +32,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TextView
-            android:textSize="@dimen/_18sdp"
-            android:gravity="center"
-            android:layout_gravity="center_horizontal"
-            android:text="Parts to Pull "
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            android:layout_width="match_parent"
-            android:background="@drawable/fill_light_gray"
-            android:layout_height="@dimen/_50sdp" />
-        <View
-            android:background="@color/dark_gray"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_1sdp">
 
-        </View>
 
         <LinearLayout
             android:gravity="center_horizontal"
@@ -47,25 +44,22 @@
 
 
             <LinearLayout
+                android:layout_marginLeft="@dimen/_10sdp"
 
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-                <TextView
-                    android:layout_marginLeft="@dimen/_20sdp"
-                    android:layout_weight="1.6"
-                    android:gravity="center"
-                    android:textSize="@dimen/_15sdp"
-                    android:text="Part Number"
-                    android:textColor="@color/dark_gray"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
+
                 <EditText
+                    android:hint="Part Number"
                     android:id="@+id/editPartNumber"
                     android:singleLine="true"
                     android:inputType="number"
-                    android:paddingLeft="@dimen/_5sdp"
-                    android:textColor="@color/dark_gray"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:textColorHint="@color/colorPrimaryDark"
+
+
+                    android:textColor="@color/colorPrimaryDark"
                     android:layout_marginRight="@dimen/_20sdp"
                     android:layout_weight="1"
                     android:textSize="@dimen/_15sdp"
@@ -74,19 +68,15 @@
                     android:layout_height="@dimen/_35sdp" />
             </LinearLayout>
 
-            <TextView
-                android:layout_marginTop="@dimen/_20sdp"
-                android:layout_marginLeft="@dimen/_15sdp"
-                android:textSize="@dimen/_18sdp"
-                android:text="Part Name"
-                android:textColor="@color/dark_gray"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+
             <EditText
                 android:singleLine="true"
-
-                android:paddingLeft="@dimen/_5sdp"
+                android:hint="Part Name"
+                android:paddingLeft="@dimen/_10sdp"
                 android:inputType="text"
+                android:textColor="@color/colorPrimaryDark"
+
+                android:textColorHint="@color/colorPrimaryDark"
                 android:layout_marginLeft="@dimen/_15sdp"
                 android:layout_marginRight="@dimen/_15sdp"
                 android:id="@+id/editPartName"
@@ -96,15 +86,11 @@
                 android:background="@drawable/lines"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_35sdp" />
-            <TextView
-                android:layout_marginTop="@dimen/_20sdp"
-                android:layout_marginLeft="@dimen/_15sdp"
-                android:textSize="@dimen/_18sdp"
-                android:text="Part Desciption"
-                android:textColor="@color/dark_gray"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+
             <EditText
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textColor="@color/colorPrimaryDark"
+                android:hint="Part Desciption"
                 android:id="@+id/editPartDescription"
                 android:paddingLeft="@dimen/_5sdp"
                 android:inputType="text"
@@ -114,7 +100,7 @@
                 android:textSize="@dimen/_15sdp"
                 android:gravity="top"
                 android:layout_gravity="clip_horizontal"
-                android:background="@drawable/lines"
+                android:background="@drawable/lines_flat"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_100sdp" />
             <ImageView
@@ -125,22 +111,17 @@
                 android:text="Image Comming Soon"
                 android:layout_marginTop="@dimen/_20sdp"
                 android:layout_width="@dimen/_180sdp"
-                android:background="@drawable/fill_light_gray"
+                android:background="@drawable/lines_flat"
                 android:layout_height="@dimen/_120sdp" />
-            <TextView
-                android:layout_marginTop="@dimen/_10sdp"
-                android:layout_marginLeft="@dimen/_15sdp"
-                android:textSize="@dimen/_15sdp"
-                android:text="Bin Room Location :"
-                android:textColor="@color/dark_gray"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+
             <EditText
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="@color/colorPrimaryDark"
                 android:id="@+id/editBinLocation"
                 android:inputType="text"
                 android:singleLine="true"
                 android:hint="Johnson City"
-                android:paddingLeft="@dimen/_5sdp"
+                android:paddingLeft="@dimen/_10sdp"
                 android:layout_marginLeft="@dimen/_15sdp"
                 android:layout_marginRight="@dimen/_15sdp"
                 android:layout_marginTop="@dimen/_10sdp"
@@ -155,50 +136,41 @@
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-                <TextView
-                    android:layout_marginLeft="@dimen/_20sdp"
-                    android:layout_weight="1.6"
-                    android:gravity="center"
-                    android:textSize="@dimen/_15sdp"
-                    android:text="Aisle"
-                    android:textColor="@color/dark_gray"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
+
                 <EditText
                     android:id="@+id/editAisle"
-                    android:paddingLeft="@dimen/_5sdp"
-                    android:inputType="text"
-                    android:singleLine="true"
-
-                    android:textColor="@color/dark_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginLeft="@dimen/_20sdp"
                     android:layout_marginRight="@dimen/_20sdp"
                     android:layout_weight="1"
-                    android:textSize="@dimen/_15sdp"
                     android:background="@drawable/lines"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/_35sdp" />
+                    android:hint="Aisle"
+
+                    android:inputType="text"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:singleLine="true"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:textSize="@dimen/_15sdp" />
             </LinearLayout>
             <LinearLayout
                 android:layout_marginTop="@dimen/_15sdp"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-                <TextView
-                    android:layout_marginLeft="@dimen/_20sdp"
-                    android:layout_weight="1.6"
-                    android:gravity="center"
-                    android:textSize="@dimen/_15sdp"
-                    android:text="Shelf"
-                    android:textColor="@color/dark_gray"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
+
                 <EditText
+                    android:layout_marginLeft="@dimen/_20sdp"
+
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:hint="Shelf"
                     android:id="@+id/editShelf"
-                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingLeft="@dimen/_10sdp"
                     android:inputType="text"
                     android:singleLine="true"
 
-                    android:textColor="@color/dark_gray"
                     android:layout_marginRight="@dimen/_20sdp"
                     android:layout_weight="1"
                     android:textSize="@dimen/_15sdp"
@@ -211,21 +183,17 @@
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-                <TextView
-                    android:layout_marginLeft="@dimen/_20sdp"
-                    android:layout_weight="1.6"
-                    android:gravity="center"
-                    android:textSize="@dimen/_15sdp"
-                    android:text="Bin Number"
-                    android:textColor="@color/dark_gray"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
+
                 <EditText
+                    android:layout_marginLeft="@dimen/_20sdp"
+
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:hint="Bin Number"
                     android:id="@+id/editBinNumber"
-                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingLeft="@dimen/_10sdp"
                     android:inputType="number"
                     android:singleLine="true"
-                    android:textColor="@color/dark_gray"
                     android:layout_marginRight="@dimen/_20sdp"
                     android:layout_weight="1"
                     android:textSize="@dimen/_15sdp"
@@ -243,29 +211,35 @@
 
 
     <FrameLayout
+
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="visible">
 
         <LinearLayout
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
             android:id="@+id/next_long"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_gravity="center|bottom"
-            android:background="@drawable/btn_con"
             android:orientation="vertical"
             android:weightSum="1">
 
-            <TextView
+            <Button
+                android:textColor="@color/white"
+                android:background="@drawable/btn_con"
+
                 android:id="@+id/txtContinue"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center_horizontal"
                 android:gravity="center"
+                android:textAllCaps="false"
                 android:shadowColor="@color/white"
                 android:text="SCAN the BIN Number To Continue"
-                android:textColor="@color/select"
-                android:textSize="@dimen/_15sdp"
+                android:textSize="@dimen/_14sdp"
                 android:textStyle="bold" />
 
 

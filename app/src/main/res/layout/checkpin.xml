@@ -4,24 +4,25 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/white"
     android:layout_width="match_parent"
     android:gravity="center"
+    android:background="@color/colorPrimary"
+
     android:layout_height="match_parent">
     <LinearLayout
-
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <ImageView
-            android:layout_marginLeft="@dimen/_10sdp"
-            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
             android:layout_marginTop="@dimen/_40sdp"
             android:layout_width="match_parent"
             android:src="@drawable/labconnectlogo"
             android:layout_height="@dimen/_60sdp" />
 
         <LinearLayout
+            android:layout_marginBottom="@dimen/_20sdp"
             android:layout_marginLeft="@dimen/_20sdp"
             android:layout_marginRight="@dimen/_20sdp"
             android:gravity="center_horizontal"
@@ -31,18 +32,22 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <TextView
-                android:textSize="@dimen/_15sdp"
+                android:textSize="@dimen/_14sdp"
                 android:text=" Please Enter Your Employee Pin below "
                 android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"
                 android:layout_gravity="clip_horizontal"
                 android:background="@drawable/lines"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/_30sdp" />
+                android:layout_height="@dimen/_40sdp" />
 
             <EditText
                 android:id="@+id/editEmpPIN"
                 android:layout_marginTop="@dimen/_30sdp"
                 android:textSize="@dimen/_15sdp"
+                android:hint="Enter PIN"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textColor="@color/colorPrimaryDark"
                 android:inputType="text|number"
                 android:paddingLeft="@dimen/_10sdp"
                 android:layout_gravity="clip_horizontal"
@@ -60,33 +65,17 @@
                 android:layout_height="wrap_content" />
 
             <TextView
-                android:layout_marginTop="@dimen/_60sdp"
-                android:textSize="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:textSize="@dimen/_14sdp"
                 android:text=" Then Click the OK button below. "
                 android:gravity="center"
-
+                android:textColor="@color/colorPrimaryDark"
                 android:layout_gravity="clip_horizontal"
                 android:background="@drawable/lines"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/_30sdp" />
+                android:layout_height="@dimen/_40sdp" />
 
-           <!-- <LinearLayout
-                android:layout_marginTop="@dimen/_40sdp"
-                android:layout_width="@dimen/_80sdp"
-                android:background="@drawable/design_button"
-                android:layout_height="@dimen/_50sdp">
-                <TextView
-                    android:background="@drawable/ripple"
-                    android:id="@+id/txtOK"
 
-                    android:textSize="@dimen/_20sdp"
-                    android:text="OK"
-                    android:textColor="@color/white"
-                    android:gravity="center"
-                    android:layout_gravity="clip_horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-            </LinearLayout>-->
 
         </LinearLayout>
 
@@ -95,6 +84,9 @@
             android:layout_height="match_parent">
 
             <LinearLayout
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
                 android:orientation="vertical"
                 android:id="@+id/next_long"
                 android:weightSum="1"
@@ -102,14 +94,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_40sdp">
 
-                <TextView
+                <Button
                     android:id="@+id/txtOK"
                     android:layout_gravity="center_horizontal"
                     android:gravity="center"
                     android:textStyle="bold"
                     android:background="@drawable/btn_con"
                     android:shadowColor="@color/white"
-                    android:textSize="@dimen/_25sdp"
+                    android:textSize="@dimen/_24sdp"
                     android:text="OK"
                     android:textColor="@color/white"
                     android:layout_width="match_parent"

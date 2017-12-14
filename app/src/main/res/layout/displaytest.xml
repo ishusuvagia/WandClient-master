@@ -5,38 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-<!--
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
-        <LinearLayout
-            android:orientation="vertical"
-            android:id="@+id/next_long"
-            android:weightSum="1"
-            android:layout_gravity="center|bottom"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_40sdp">
-
-            <TextView
-                android:id="@+id/txtOK"
-                android:layout_gravity="center_horizontal"
-                android:gravity="center"
-                android:textStyle="bold"
-                android:background="@drawable/btn_con"
-                android:shadowColor="@color/white"
-                android:textSize="@dimen/_25sdp"
-                android:text="OK"
-                android:textColor="@color/white"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-
-
-
-        </LinearLayout>
-    </FrameLayout>
--->
     <TextView
         android:visibility="gone"
         android:gravity="center"
@@ -61,9 +30,13 @@
 -->
         <android.support.v7.widget.RecyclerView
             android:id="@+id/my_recycler_view"
+            android:layout_marginTop="@dimen/_5sdp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:clickable="true"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
             android:focusable="true"
             android:scrollbars="vertical" />
 </FrameLayout>

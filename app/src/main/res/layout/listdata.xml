@@ -11,7 +11,7 @@
 
     <LinearLayout
         android:layout_marginTop="@dimen/_5sdp"
-        android:background="@drawable/lines"
+        android:background="@drawable/lines_flat"
         android:padding="@dimen/_5sdp"
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -21,11 +21,9 @@
         <android.support.v7.widget.CardView
             xmlns:card_view="http://schemas.android.com/apk/res-auto"
             android:id="@+id/card_view_notification"
-            card_view:cardCornerRadius="@dimen/_10sdp"
-
-            card_view:cardElevation="@dimen/_5sdp"
-            card_view:cardBackgroundColor="@color/light_gray"
             android:layout_width="match_parent"
+            card_view:cardCornerRadius="@dimen/_8sdp"
+            card_view:cardBackgroundColor="@color/light_gray"
             android:layout_height="wrap_content">
 
             <LinearLayout
@@ -40,6 +38,7 @@
                     android:orientation="vertical">
 
                     <LinearLayout
+                        android:background="@color/colorPrimaryDark"
                         android:weightSum="2"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -53,7 +52,7 @@
                             android:text="supplyID"
                             android:paddingLeft="@dimen/_10sdp"
                             android:textStyle="bold"
-                            android:textColor="@color/maroon"
+                            android:textColor="@color/white"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:textSize="14dp" />
@@ -62,7 +61,7 @@
                         <TextView
                             android:layout_weight="1"
                             android:text="txtQuantity"
-                            android:textColor="@color/maroon"
+                            android:textColor="@color/white"
 
                             android:id="@+id/txtQuantity"
                             android:paddingRight="@dimen/_10sdp"
@@ -85,23 +84,46 @@
                             android:weightSum="2"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical">
+                            android:orientation="horizontal">
 
                             <TextView
-                                android:text="txtLable"
-                                android:layout_weight="1"
+                                android:layout_weight="1.1"
+                                android:text="Lable"
                                 android:paddingLeft="@dimen/_12sdp"
-                                android:textColor="@color/black"
-                                android:id="@+id/txtLable"
+                                android:textColor="@color/darkgray"
                                 android:paddingRight="10dp"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:textSize="@dimen/_12sdp" />
                             <TextView
+                                android:textStyle="bold|italic"
+                                android:text="txtLable"
+                                android:textColor="@color/black"
+                                android:id="@+id/txtLable"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_12sdp" />
+
+
+
+                    </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:text="Comment"
+                                android:layout_weight="1.1"
+                                android:paddingLeft="@dimen/_12sdp"
+                                android:textColor="@color/darkgray"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_12sdp" />
+                            <TextView
+                                android:textStyle="bold|italic"
+
                                 android:id="@+id/txtComment"
                                 android:text="comment"
-                                android:layout_weight="1"
-                                android:paddingLeft="@dimen/_12sdp"
+                                android:layout_weight="0.9"
                                 android:textColor="@color/black"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -113,56 +135,100 @@
                         android:weightSum="2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
+                        android:orientation="horizontal">
                         <TextView
-                            android:text="hasInventoryContent"
-                            android:layout_weight="1"
+                            android:text="Has Inventory Content"
+                            android:layout_weight="1.1"
                             android:paddingLeft="@dimen/_12sdp"
+                            android:textColor="@color/darkgray"
+                            android:paddingRight="@dimen/_10sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_12sdp" />
+                        <TextView
+                            android:textStyle="bold|italic"
+
+                            android:text="hasInventoryContent"
+                            android:layout_weight="0.9"
                             android:textColor="@color/black"
                             android:id="@+id/txtHasInventoryContent"
                             android:paddingRight="@dimen/_10sdp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:textSize="@dimen/_12sdp" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
                         <TextView
-                            android:id="@+id/txtVendorPartNumber"
-                            android:text="vendorPartNumber"
-                            android:layout_weight="1"
+                            android:text="Vendor PartNumber"
+                            android:layout_weight="1.1"
                             android:paddingLeft="@dimen/_12sdp"
-                            android:textColor="@color/black"
+                            android:textColor="@color/darkgray"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:textSize="@dimen/_12sdp" />
+                         <TextView
+                             android:textStyle="bold|italic"
+
+                             android:id="@+id/txtVendorPartNumber"
+                             android:layout_weight="0.9"
+                             android:textColor="@color/black"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:textSize="@dimen/_12sdp" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:weightSum="2"
-                        android:layout_marginBottom="@dimen/_5sdp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
+                        android:orientation="horizontal">
                         <TextView
-                            android:text="lCDescription"
+                            android:text="LCDescription"
                             android:singleLine="true"
-                            android:layout_weight="1"
+                            android:layout_weight="1.1"
                             android:paddingLeft="@dimen/_12sdp"
-                            android:textColor="@color/black"
-                            android:id="@+id/txtLCDescription"
+                            android:textColor="@color/darkgray"
                             android:paddingRight="@dimen/_10sdp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:textSize="@dimen/_12sdp" />
                         <TextView
-                            android:id="@+id/txtVendorName"
-                            android:text="vendorName"
-                            android:layout_weight="1"
-                            android:paddingLeft="@dimen/_12sdp"
+                            android:textStyle="bold|italic"
+
+                            android:singleLine="true"
+                            android:layout_weight="0.9"
                             android:textColor="@color/black"
+                            android:id="@+id/txtLCDescription"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:textSize="@dimen/_12sdp" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginBottom="@dimen/_5sdp"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:text="Vendor Name"
+                            android:layout_weight="1.1"
+                            android:paddingLeft="@dimen/_12sdp"
+                            android:textColor="@color/darkgray"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_12sdp" />
+                         <TextView
+                             android:textStyle="bold|italic"
+
+                             android:id="@+id/txtVendorName"
+                             android:layout_weight="0.9"
+                             android:textColor="@color/black"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:textSize="@dimen/_12sdp" />
                     </LinearLayout>
 
                 </LinearLayout>

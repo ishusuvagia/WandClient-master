@@ -4,7 +4,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/white"
+    android:background="@color/colorPrimary"
     android:layout_width="match_parent"
     android:gravity="center"
     android:layout_height="match_parent">
@@ -15,8 +15,8 @@
         android:layout_height="match_parent">
         <ImageView
 
-            android:layout_marginLeft="@dimen/_10sdp"
-            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
             android:layout_marginTop="@dimen/_40sdp"
             android:layout_width="match_parent"
             android:src="@drawable/labconnectlogo"
@@ -25,7 +25,7 @@
         <LinearLayout
 
             android:layout_marginBottom="@dimen/_40sdp"
-            android:gravity="center"
+            android:gravity="bottom"
             android:layout_marginRight="@dimen/_20sdp"
             android:layout_marginLeft="@dimen/_20sdp"
             android:layout_gravity="center"
@@ -38,16 +38,18 @@
                 android:background="@drawable/lines"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-                <TextView
+                <Button
                     android:background="@drawable/ripple"
                     android:id="@+id/txtScan"
-                    android:textSize="@dimen/_15sdp"
+                    android:textSize="@dimen/_14sdp"
                     android:text=" Please Scan Your Employee Badge "
-                    android:gravity="center_horizontal"
-                    android:layout_gravity="clip_horizontal"
+                    android:gravity="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_gravity="center_vertical"
 
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
+                    android:layout_height="@dimen/_40sdp" />
 
 
 

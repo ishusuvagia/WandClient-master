@@ -34,7 +34,7 @@
                     android:textAllCaps="false"
                     android:textStyle="normal"
                     android:text="Tube Room - Parts Pulling"
-                    android:textColor="@color/textColor"
+                    android:textColor="@color/white"
                     android:background="@drawable/ripple"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent" />
@@ -50,7 +50,7 @@
                     android:textAllCaps="false"
                     android:textStyle="normal"
                     android:text="Kit Lead"
-                    android:textColor="@color/textColor"
+                    android:textColor="@color/white"
 
                     android:background="@drawable/ripple"
                     android:layout_width="match_parent"
@@ -68,7 +68,7 @@
                     android:textAllCaps="false"
                     android:textStyle="normal"
                     android:text="QC - Quality Control"
-                    android:textColor="@color/textColor"
+                    android:textColor="@color/white"
 
                     android:background="@drawable/ripple"
                     android:layout_width="match_parent"
@@ -86,7 +86,7 @@
                     android:textAllCaps="false"
                     android:textStyle="normal"
                     android:text="Receive Inventory"
-                    android:textColor="@color/textColor"
+                    android:textColor="@color/white"
 
                     android:background="@drawable/ripple"
                     android:layout_width="match_parent"
@@ -103,7 +103,7 @@
                     android:textAllCaps="false"
                     android:textStyle="normal"
                     android:text="Inventory Verification"
-                    android:textColor="@color/textColor"
+                    android:textColor="@color/white"
                     android:background="@drawable/ripple"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />

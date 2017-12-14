@@ -24,15 +24,15 @@ public class FullSingleKitActivity extends AppCompatActivity {
 
     private EditText editEmpID;
 
-    private TextView txtNextWork,txtPartsKit;
+    private Button txtNextWork,txtPartsKit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.full_single_kit);
 
-        txtNextWork=(TextView) findViewById(R.id.txtNextWork);
-        txtPartsKit=(TextView) findViewById(R.id.txtPartsKit);
+        txtNextWork=(Button) findViewById(R.id.txtNextWork);
+        txtPartsKit=(Button) findViewById(R.id.txtPartsKit);
 
 
         txtNextWork.setOnClickListener(new View.OnClickListener() {
@@ -41,6 +41,8 @@ public class FullSingleKitActivity extends AppCompatActivity {
 
                 Intent intent=new Intent(getApplicationContext(),PartsPullActivity.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.fade_in,R.anim.fade_out);
+
             }
         });
 
@@ -50,6 +52,8 @@ public class FullSingleKitActivity extends AppCompatActivity {
 
                 Intent intent=new Intent(getApplicationContext(),QuanityActivity.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.fade_in,R.anim.fade_out);
+
             }
         });
 

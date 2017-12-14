@@ -128,6 +128,8 @@ public class QuanityActivity extends AppCompatActivity {
                    intentt.putExtra("txtVisitName",txtVisitName);
 */
                     startActivity(intentt);
+                    overridePendingTransition(R.anim.fade_in,R.anim.fade_out);
+
 
 //                   new PostDataTOServer().execute();
 

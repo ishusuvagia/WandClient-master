@@ -10,6 +10,7 @@ import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -39,7 +40,7 @@ import java.util.Map;
 public class PartsPullActivity extends AppCompatActivity {
     SharedPreferences sp, pref;
     String Prefrence = "Prefrence";
-    TextView txtContinue;
+    Button txtContinue;
     EditText editPartName,editPartNumber,editPartDescription,editBinLocation,editBinNumber,editShelf,editAisle;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -59,7 +60,7 @@ public class PartsPullActivity extends AppCompatActivity {
 
 
 
-        txtContinue=(TextView)findViewById(R.id.txtContinue);
+        txtContinue=(Button)findViewById(R.id.txtContinue);
         txtContinue.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -74,6 +75,9 @@ public class PartsPullActivity extends AppCompatActivity {
                 {
                     Intent intent=new Intent(getApplicationContext(),PartsPullActivity2.class);
                     startActivity(intent);
+                    overridePendingTransition(R.anim.fade_in,R.anim.fade_out);
+
+
                 }
 
             }

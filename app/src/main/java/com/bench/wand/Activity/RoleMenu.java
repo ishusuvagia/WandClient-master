@@ -39,6 +39,8 @@ public class RoleMenu extends AppCompatActivity {
 
                 Intent intent=new Intent(getApplicationContext(),FullSingleKitActivity.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.fade_in,R.anim.fade_out);
+
             }
         });
 

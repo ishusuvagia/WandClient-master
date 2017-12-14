@@ -61,14 +61,14 @@ public class CheckPinActivity extends AppCompatActivity {
 
     private EditText editEmpPIN;
 
-    private TextView txtOk, txtError;
+    private TextView  txtError;
 
     private String strusername = "", strpassword = "";
     private ProgressDialog pDialog;
     private JSONObject success;
 
     private RippleDrawable rippleDrawable;
-    private Button buttonWithRipple;
+    private Button txtOk;
 
 
     String pin = "1234";
@@ -85,7 +85,7 @@ public class CheckPinActivity extends AppCompatActivity {
         sp = getSharedPreferences(Prefrence, Context.MODE_PRIVATE);
         pref = getSharedPreferences("contact", Context.MODE_PRIVATE);
         mthis = CheckPinActivity.this;
-        txtOk = (TextView) findViewById(R.id.txtOK);
+        txtOk = (Button) findViewById(R.id.txtOK);
         editEmpPIN = (EditText) findViewById(R.id.editEmpPIN);
         txtError = (TextView) findViewById(R.id.txtError);
 
@@ -103,6 +103,8 @@ public class CheckPinActivity extends AppCompatActivity {
 
                     Intent intent = new Intent(getApplicationContext(), RoleMenu.class);
                     startActivity(intent);
+                    overridePendingTransition(R.anim.fade_in,R.anim.fade_out);
+
                     new PostAssignmentDataTOServer().execute();
                 }
 

@@ -51,38 +51,38 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
         holder.txtSupplyID.setText("supplyID  :  "+category.getSupplyID());
         holder.txtQuantity.setText("Quantity  :  "+category.getQuantity()+"  ");
-        holder.txtLable.setText("Lable  :  "+category.getLable());
-        holder.txtComment.setText("Comment  :  "+category.getComment());
-        holder.txtHasInventoryContent.setText("InventoryContent  :  "+category.getHasInventoryContent());
+        holder.txtLable.setText(":  "+category.getLable());
+        holder.txtComment.setText(":  "+category.getComment());
+        holder.txtHasInventoryContent.setText(":  "+category.getHasInventoryContent());
 
         if (category.getVendorPartNumber().equals("null"))
         {
-            holder.txtVendorPartNumber.setText("VendorPartNumber  :  " );
+            holder.txtVendorPartNumber.setText(":  " );
 
         }
         else
         {
-            holder.txtVendorPartNumber.setText("VendorPartNumber  :  "+category.getVendorPartNumber());
+            holder.txtVendorPartNumber.setText(":  "+category.getVendorPartNumber());
 
         }
         if (category.getVendorName().equals("null"))
         {
-            holder.txtVendorName.setText("VendorName  :  " );
+            holder.txtVendorName.setText(":  " );
 
         }
         else
         {
-            holder.txtVendorName.setText("VendorName  :  "+category.getVendorName());
+            holder.txtVendorName.setText(":  "+category.getVendorName());
 
         }
         if (category.getlCDescription().equals("null"))
         {
-            holder.txtLCDescription.setText("LCDescription  :  " );
+            holder.txtLCDescription.setText(":  " );
 
         }
         else
         {
-            holder.txtLCDescription.setText("LCDescription  :  "+category.getlCDescription());
+            holder.txtLCDescription.setText(":  "+category.getlCDescription());
 
         }
         Animation animAnticipateOvershoot = AnimationUtils.loadAnimation(context, R.anim.slide_left_slow);
